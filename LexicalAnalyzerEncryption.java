@@ -1,4 +1,4 @@
-Problem Statement
+/* Problem Statement
 
 Write a Java program that acts as a simple lexical analyzer to encrypt a given paragraph of text.
 
@@ -40,6 +40,7 @@ Language
 Java
 
   ***********************************************************************
+*/
 
  public class LexicalAnalyzer {
     public static void main(String[] args) {
