@@ -1,4 +1,4 @@
-Problem Statement
+/* Problem Statement
 
 A number is called a Special Number if the sum of its digits raised to the power of their respective positions (starting from 1 from the left) is equal to the number itself.
 
@@ -40,6 +40,7 @@ Position counting starts from the leftmost digit
 Zero digits contribute 0^position = 0
 
   ****************************************************************************
+*/
 
   public class SpecialNumber {
     public static boolean isSpecial(int n) {
