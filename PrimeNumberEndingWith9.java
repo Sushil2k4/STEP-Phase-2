@@ -1,4 +1,4 @@
-Problem Statement
+/* Problem Statement
 
 Write a Java program to generate all prime numbers between 1 and 10,000 that end with the digit 9.
 
@@ -43,6 +43,7 @@ Modular programming
 Range-based output formatting
 
   ********************************************************************************
+*/
 
  public class PrimeNumbers {
     public static boolean isPrime(int num) {
