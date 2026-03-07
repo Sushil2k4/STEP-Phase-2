@@ -41,4 +41,28 @@ Zero digits contribute 0^position = 0
 
   ****************************************************************************
 
-  
+  public class SpecialNumber {
+    public static boolean isSpecial(int n) {
+        String numStr = Integer.toString(n);
+        int sum = 0;
+        for (int i = 0; i < numStr.length(); i++) {
+            int digit = numStr.charAt(i) - '0';
+            int position = i+1;
+            sum += Math.pow(digit, position);
+        }
+        return (sum == n);
+    }
+
+    public static void main(String[] args) {
+        int count = 0;
+        System.out.println("The Special Numbers between 1 and 10,000 : ");
+        for (int i = 0; i < 10000; i++) {
+            if (isSpecial(i)) {
+                System.out.println(i);
+                count++;
+            }
+        }
+        System.out.println("THE TOTAL COUNT OF SPECIAL NUMBERS FOUND " + count);
+    }
+}
+
