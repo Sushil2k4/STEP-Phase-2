@@ -42,13 +42,16 @@ Java
   ***********************************************************************
 */
 
+import java.util.*;
  public class LexicalAnalyzer {
     public static void main(String[] args) {
-        String text = "COVID crisis has taught us several lessons and together we have overcome this great challenge."
+     Scanner sc = new Scanner (System.in);
+     String text = sc.nextLine();
+        /*String text = "COVID crisis has taught us several lessons and together we have overcome this great challenge."
         + "The COVID pandemic sent shock waves through the world economy and triggered the largest global economic crisis in more than a century."
         + "The crisis led to a dramatic increase in inequality within and across countries."
         + "Preliminary evidence suggests that the recovery from the crisis will be as uneven as its initial economic impacts, with emerging economies and economically disadvantaged groups needing much more time to recover from pandemic-induced losses of income and livelihoods."
-        + "Now there is a sense of introspection in people. India has emerged stronger";
+        + "Now there is a sense of introspection in people. India has emerged stronger"; */
 
         int sum = 0;
         System.out.println("The Encrypted statement is : ");
