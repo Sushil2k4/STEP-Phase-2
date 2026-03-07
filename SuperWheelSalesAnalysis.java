@@ -1,4 +1,4 @@
-Problem Statement
+/* Problem Statement
 
 Write a Java program to analyze the daily sales of a company called Super Wheels using a derived mathematical formula.
 
@@ -27,6 +27,7 @@ Conditional statements
 Mathematical computation
 
   ********************************************************************************************************
+ */
 
   import java.util.*;
 
