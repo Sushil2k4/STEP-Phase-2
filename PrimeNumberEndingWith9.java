@@ -43,3 +43,46 @@ Modular programming
 Range-based output formatting
 
   ********************************************************************************
+
+ public class PrimeNumbers {
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static boolean endsWith9(int num) {
+        return (num % 10 == 9);
+    }
+
+    public static int displayingRange(int start, int end) {
+        int count = 0;
+        for (int i = start; i <= end; i++) {
+            if (isPrime(i) && endsWith9(i)) {
+                count ++;
+            }
+        }
+        System.out.println("Total number of prime numbers from " + start + " to " + end + " = " + count);
+        for (int i = start; i <= end; i++) {
+            if (isPrime(i) && endsWith9(i)) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("\n");
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int totalCount = 0;
+        for (int start = 0; start < 10000; start += 100) {
+            int end = start + 99;
+            totalCount += displayingRange(start, end);
+        }
+        System.out.println("Total prime numbers from 1 to 10,000 that end with the digit 9 : " + totalCount);
+    }
+}
