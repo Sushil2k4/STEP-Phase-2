@@ -87,3 +87,7 @@ Range-based output formatting
         System.out.println("Total prime numbers from 1 to 10,000 that end with the digit 9 : " + totalCount);
     }
 }
+
+
+Enhancement : Print the percentage of prime numbers present in that range 
+ (Hint : since the range is out of 100 , no need to compute )
