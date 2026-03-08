@@ -89,9 +89,9 @@ Range-based output formatting
 }
 
 
-Enhancement : Print the percentage of prime numbers present in that range 
+/* Enhancement : Print the percentage of prime numbers present in that range 
  (Hint : since the range is out of 100 , no need to compute )
-
+*/
 
  public class PrimeNumbers {
     public static boolean isPrime(int num) {
